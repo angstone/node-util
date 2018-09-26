@@ -1,0 +1,33 @@
+{
+  "name": "@angstone/node-util",
+  "version": "0.0.1",
+  "description": "Util function for node and typescript development",
+  "main": "dist/src/index.js",
+  "scripts": {
+    "test": "npm run build && node ./dist/test/index.js",
+    "build": "./node_modules/typescript/bin/tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angstone/node-util.git"
+  },
+  "keywords": [
+    "node",
+    "nodejs",
+    "typescript",
+    "utils"
+  ],
+  "author": "ssribeiro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angstone/node-util/issues"
+  },
+  "homepage": "https://github.com/angstone/node-util#readme",
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "typescript": "^3.0.3"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1"
+  }
+}
