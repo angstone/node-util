@@ -1,8 +1,9 @@
 {
   "name": "@angstone/node-util",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Util function for node and typescript development",
   "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
   "scripts": {
     "test": "npm run build && node ./dist/test/index.js",
     "build": "./node_modules/typescript/bin/tsc"
