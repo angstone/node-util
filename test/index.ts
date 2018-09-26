@@ -1,7 +1,7 @@
 import * as ast from '../src';
 
-ast.log('cyan');
-ast.info('magenta')
+ast.log('magenta');
+ast.info('cyan')
 ast.warn('yellow')
 ast.error('red')
 ast.success('green')
