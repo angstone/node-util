@@ -7,6 +7,9 @@ exports.info = (t) => { console.info(chalk_1.default.cyan(t)); };
 exports.warn = (t) => { console.warn(chalk_1.default.yellow(t)); };
 exports.error = (t) => { console.error(chalk_1.default.red(t)); };
 exports.success = (t) => { console.info(chalk_1.default.green(t)); };
-exports.dev = (t) => { console.log(chalk_1.default.bgCyan(t)); };
+exports.dev = (t) => {
+    if (process.env.NODE_ENV == 'development')
+        console.log(chalk_1.default.bgCyan(t));
+};
 exports.bp = (t) => { console.warn(chalk_1.default.bgMagenta(t)); };
 //# sourceMappingURL=index.js.map

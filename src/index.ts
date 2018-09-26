@@ -6,5 +6,8 @@ export const info = (t:any) => { console.info(chalk.cyan(t)); };
 export const warn = (t:any) => { console.warn(chalk.yellow(t)); };
 export const error = (t:any) => { console.error(chalk.red(t)); };
 export const success = (t:any) => { console.info(chalk.green(t)); };
-export const dev = (t:any) => { console.log(chalk.bgCyan(t)); };
+export const dev = (t:any) => {
+  if(process.env.NODE_ENV=='development')
+    console.log(chalk.bgCyan(t));
+};
 export const bp = (t:any) => { console.warn(chalk.bgMagenta(t)); };
