@@ -11,3 +11,7 @@ export const dev = (t:any) => {
     console.log(chalk.bgCyan(t));
 };
 export const bp = (t:any) => { console.warn(chalk.bgMagenta(t)); };
+
+export const delay = async (time: number) => {
+  await new Promise((resolve)=>setTimeout(resolve, time));
+}
